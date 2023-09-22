@@ -1,6 +1,10 @@
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: rgb(226, 229, 229);
+  /* background-image: url('../public/assets/tilde.webp') ; */
+ 
 }
 
 code {
@@ -14,9 +18,10 @@ code {
   padding: 0 1rem;
 }
 
-h1{
+.h1-toDo{
   margin-top: 1rem;
   text-align: center;
+  color: #333;
 }
 
 .top{
@@ -31,18 +36,23 @@ input{
   outline: none;
   width: 400px;
   padding: 0.5rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #201f1f;
+  background-color: rgb(226, 229, 229);
 }
 .add{
-  background-color: #000;
+  background-color: #201f1f;
   color: #fff;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
+  border-radius: 5px;
+}
+.add:hover {
+  background-color: #0056b3; 
 }
 .todo{
  position: relative;
  margin-top: 1rem;
- background-color: #000;
+ background-color: #0056b3;
  color: #fff;
  padding: 1.5rem 3rem;
  border-radius: 5px;
@@ -54,8 +64,75 @@ input{
   right: 20px;
   display: flex;
   gap: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .icon{
   cursor: pointer;
   font-size: 20px;
 }
+.text{
+  display: flex;
+}
+.list{
+  margin-top: 2rem;
+}
+
+/* FOOTER */
+
+.footer-container{
+  /* position: fixed; */
+  min-height: 60vh;
+  top: 0;
+  left: 0;
+  /* width: 100vw;
+  height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.contact-section{
+  text-align: center;
+  margin-top: auto;
+}
+
+
+#contact-section h2 {
+  font-size: 1.875rem;
+}
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+#contact a {
+  margin: 0.5rem 1.125rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.img-footer{
+  width: 2rem;
+  height: 2rem;
+  color:#201f1f;
+}
+#contact h2 {
+  margin-top: 0.5rem;
+  font-size: 1rem; 
+  color:#201f1f;
+}
+
+.hr{
+  width: 25rem;
+}
+
+
+/* #contact img {
+  width: 3rem;
+  height: 3rem;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+} */

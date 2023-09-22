@@ -3,6 +3,10 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import ToDo from './components/ToDo';
 import { getAllToDo, addToDo, updateToDo, deleteToDo } from './utils/HandleApi';
+import Footer from './components/Footer';
+
+
+
 
 function App() {
 
@@ -23,7 +27,7 @@ setToDoId(_id)
   return (
     <div className="App">
      <div className='container'>
-     <h1>To Do App</h1>
+     <h1 className='h1-toDo'>To Do App</h1>
 
      <div className='top'>
       <input 
@@ -51,6 +55,7 @@ setToDoId(_id)
             />
           )}
         </div>
+        <Footer/>
 
      </div>
     </div>
